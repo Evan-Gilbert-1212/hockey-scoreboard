@@ -1,6 +1,6 @@
 const main = () => {}
 
-let timer = 20
+let timer = 1200
 let minutes
 let seconds
 let gameClock
@@ -36,7 +36,7 @@ const pauseGame = () => {
 }
 
 const myTimer = () => {
-  if (timer === 20) {
+  if (timer === 1200) {
     updatePeriod()
   }
 
@@ -58,7 +58,7 @@ const myTimer = () => {
     document.querySelector('.period-tracker').textContent = 'Game Over!'
     checkForWin()
   } else if (timer < 0) {
-    timer = 20
+    timer = 1200
   }
 }
 
@@ -181,7 +181,7 @@ const resetGame = () => {
 
   document.querySelector('.start-game').innerHTML = 'Start Game'
 
-  timer = 20
+  timer = 1200
 }
 
 document.addEventListener('DOMContentLoaded', main)
