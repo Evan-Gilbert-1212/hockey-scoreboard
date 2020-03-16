@@ -3,12 +3,123 @@
   <head lang="en">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>hockey-scoreboard</title>
+    <title>Scoreboard</title>
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="stylesheet" href="/screen.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Kanit&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1 class="hello-world"></h1>
+    <h1>MY NHL SCOREBOARD</h1>
+    <h2 class="period-tracker">Period: 1st</h2>
+    <button class="update-period">Update Period</button>
+    <section class="teams">
+      <section class="team one">
+        <section>
+          <h2 class="team-1-name">Team 1</h2>
+          <div>
+            <select class="team-1-input">
+              <option>Select Team One...</option>
+              <option>Anaheim Ducks </option>
+              <option>Arizona Coyotes </option>
+              ><option>Boston Bruins </option>
+              ><option>Buffalo Sabres </option>
+              ><option>Calgary Flames </option>
+              ><option>Carolina Hurricanes </option>
+              ><option>Chicago Blackhawks </option>
+              ><option>Colorado Avalanche </option>
+              ><option>Columbus Blue Jackets </option>
+              ><option>Dallas Stars </option>
+              ><option>Detroit Red Wings </option>
+              ><option>Edmonton Oilers </option>
+              ><option>Florida Panthers </option>
+              ><option>Los Angeles Kings </option>
+              ><option>Minnesota Wild </option>
+              ><option>Montreal Canadiens </option>
+              ><option>Nashville Predators </option>
+              ><option>New Jersey Devils </option>
+              ><option>New York Islanders </option>
+              ><option>New York Rangers </option>
+              ><option>Ottawa Senators </option>
+              ><option>Philadelphia Flyers </option>
+              ><option>Pittsburgh Penguins </option>
+              ><option>San Jose Sharks </option>
+              ><option>St Louis Blues </option>
+              ><option>Tampa Bay Lightning </option>
+              ><option>Toronto Maple Leafs </option>
+              ><option>Vancouver Canucks </option>
+              ><option>Vegas Golden Knights </option>
+              ><option>Washington Capitals </option>
+              ><option>Winnipeg Jets </option>
+            </select>
+            <button class="update-team-1-name">Update</button>
+          </div>
+          <p class="team-1-score">0</p>
+        </section>
+        <section>
+          <section>
+            <button class="team-1-add-1-button">add 1</button>
+            <button class="team-1-subtract-1-button">subtract 1</button>
+          </section>
+        </section>
+      </section>
+      <section class="team two">
+        <section>
+          <h2 class="team-2-name">Team 2</h2>
+          <div>
+            <select class="team-2-input">
+              <option>Select Team Two...</option>
+              <option>Anaheim Ducks </option>
+              <option>Arizona Coyotes </option>
+              ><option>Boston Bruins </option>
+              ><option>Buffalo Sabres </option>
+              ><option>Calgary Flames </option>
+              ><option>Carolina Hurricanes </option>
+              ><option>Chicago Blackhawks </option>
+              ><option>Colorado Avalanche </option>
+              ><option>Columbus Blue Jackets </option>
+              ><option>Dallas Stars </option>
+              ><option>Detroit Red Wings </option>
+              ><option>Edmonton Oilers </option>
+              ><option>Florida Panthers </option>
+              ><option>Los Angeles Kings </option>
+              ><option>Minnesota Wild </option>
+              ><option>Montreal Canadiens </option>
+              ><option>Nashville Predators </option>
+              ><option>New Jersey Devils </option>
+              ><option>New York Islanders </option>
+              ><option>New York Rangers </option>
+              ><option>Ottawa Senators </option>
+              ><option>Philadelphia Flyers </option>
+              ><option>Pittsburgh Penguins </option>
+              ><option>San Jose Sharks </option>
+              ><option>St Louis Blues </option>
+              ><option>Tampa Bay Lightning </option>
+              ><option>Toronto Maple Leafs </option>
+              ><option>Vancouver Canucks </option>
+              ><option>Vegas Golden Knights </option>
+              ><option>Washington Capitals </option>
+              ><option>Winnipeg Jets </option>
+            </select>
+            <button class="update-team-2-name">Update</button>
+          </div>
+          <p class="team-2-score">0</p>
+        </section>
+
+        <section>
+          <section>
+            <button class="team-2-add-1-button">add 1</button>
+            <button class="team-2-subtract-1-button">subtract 1</button>
+          </section>
+        </section>
+      </section>
+    </section>
+
+    <p class="victory-message"></p>
+    <button class="reset-button">Reset Game</button>
+
     <script src="/main.js" charset="utf-8"></script>
   </body>
 </html>

@@ -2,6 +2,11 @@
   font: 16px / 1 sans-serif;
 }
 
+@font-face {
+  font-family: "NHL";
+  src: url("./fonts/NHL.ttf") format("ttf"), url("./fonts/nhl-webfont.woff") format("woff"), url("./fonts/nhl-webfont.woff2") format("woff2");
+}
+
 html {
   height: 100%;
 }
@@ -9,4 +14,66 @@ html {
 body {
   margin: 0;
   min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: whitesmoke;
+  color: rgb(14, 14, 14);
+  background-image: url('./images/NHL-background.png');
+  background-size: cover;
+  background-position: center center;
+}
+
+body, html {
+  height: 100%;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'NHL', Arial, sans-serif;
+}
+
+.teams {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 60%;
+}
+
+.team {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.team h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.team-1-score, .team-2-score {
+  text-align: center;
+  font-size: 5rem;
+}
+
+.victory-message {
+  font-size: 2rem;
+}
+
+button {
+  border: 0;
+  background-color: black;
+  color: white;
+  font-family: 'Kanit', sans-serif;
+}
+
+div {
+  text-align: center;
+}
+
+select {
+  width: 13rem;
 }
